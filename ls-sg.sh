@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#set tcp ports numbers on array "ports"
+#set tcp ports numbers on array "ports" 
 ports=(22 3389 3306 5432 27017)
 
 #set name of regions on array "regions"
