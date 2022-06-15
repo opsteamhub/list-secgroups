@@ -1,7 +1,12 @@
 #!/bin/bash
 
+#set tcp ports numbers on array "ports"
 ports=(22 3389 3306 5432 27017)
+
+#set name of regions on array "regions"
 regions=("us-east-1" "sa-east-1")
+
+#get & print number of AWS account
 myaccount=$(aws sts get-caller-identity --query Account --output text)
 
 echo -e "Account ID: $myaccount\n"
